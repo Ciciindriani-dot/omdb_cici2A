@@ -12,3 +12,9 @@ Route::post('/login', [AuthController::class, 'login'])->name('signin');
 Route::get('/panel-control', function () {
     return view('panel-control.index');
 });
+
+Route::get('/Favorites', function () {
+    return view('panel-control.my');
+});
+
+Route::get('lang/{locale}', [AuthController::class, 'switchLang'])->name('lang.switch');
