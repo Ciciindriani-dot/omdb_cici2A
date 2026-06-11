@@ -6,6 +6,7 @@ use App\Services\AuthService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\Rules\Password;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -89,6 +90,16 @@ class AuthController extends Controller
             return redirect()->back()->with('error', 'Terjadi kesalahan');
         }
     }
+
+    public function logout(Request $request)
+{
+    Auth::logout();
+
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
+
+    return redirect('/');
+}
     public function switchLang($locale)
     {
         if (in_array($locale, ['en', 'id'])) {

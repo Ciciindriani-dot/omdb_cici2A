@@ -66,7 +66,7 @@
                                             <div class="text-center py-5">
                                                 <i class="fas fa-heart-broken fa-3x text-muted mb-3 d-block"></i>
                                                 <h5 class="text-muted">
-                                                    {{ __('message.No_favorites_yet') }}
+                                                    {{ __('messages.No_favorites_yet') }}
                                                 </h5>
                                                 <p class="text-muted">
                                                     {{ __('Start adding movies to your favorites list!') }}

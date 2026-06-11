@@ -9,7 +9,7 @@
         <ul class="sidebar-menu">
             <li class="menu-header">Pages</li>
             <li class="dropdown active">
-                <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>{{ __('messages.movie_list') }}</span></a>
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>{{ __('messages.movies') }}</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{ url('/panel-control')}}">{{ __('messages.search_movies') }}</a></li>
                     <li class=active><a class="nav-link" href="{{ url('/Favorites') }}">{{ __('messages.my_favorites') }}</a></li>
